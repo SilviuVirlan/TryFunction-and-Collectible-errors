@@ -3,10 +3,6 @@ codeunit 70302 "Try Function Example 2"
     [TryFunction]
     [ErrorBehavior(ErrorBehavior::Collect)]
     procedure TryGetMasterData(Cust: Text[20]; Vend: Text[20])
-    var
-        CustomerRec: Record Customer;
-        VendorRec: Record Vendor;
-        c, v : Boolean;
     begin
         TryGetCustomer(Cust);
         TryGetVendor(Vend);
